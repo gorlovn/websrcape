@@ -1,0 +1,14 @@
+{
+   "llm": {
+      "model": "ollama/mistral",
+      "temperature": 1,
+      "format": "json",
+      "model_tokens": 2000,
+      "base_url": "http://localhost:11434"
+   },
+   "embeddings": {
+      "model": "ollama/nomic-embed-text",
+      "temperature": 0,
+      "base_url": "http://localhost:11434"
+   }
+}

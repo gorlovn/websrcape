@@ -1,0 +1,14 @@
+/*.sh
+*.pyc
+*.out
+*.dat
+*.yaml
+*.*~
+.env
+.idea/
+.vscode/
+venv/
+build/
+dist/
+data/
+log/
