@@ -31,6 +31,9 @@ def main(_url, _prompt,
     import time
     import json
     from scrapegraphai.graphs import SmartScraperGraph
+    import nest_asyncio  # Import nest_asyncio module for asynchronous operations
+
+    nest_asyncio.apply()  # Apply nest_asyncio to resolve any issues with asyncio event loop
 
     _config_path = os.path.join(DATA_PATH, _config_file)
     if not os.path.isfile(_config_path):
