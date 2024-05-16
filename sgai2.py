@@ -47,6 +47,9 @@ def main(_url, _prompt,
 
     log.info(f"Scrape site: {_url}")
     log.info(f"Prompt: {_prompt}")
+    _llm = _graph_config.get('llm', {})
+    _model = _llm.get('model')
+    log.info(f"Model: {_model}")
 
     smart_scraper_graph = SmartScraperGraph(prompt=_prompt, source=_url, config=_graph_config)
 
